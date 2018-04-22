@@ -34,7 +34,6 @@ class ViewController: UIViewController {
         if cardDisplayedIndex < game.cardsDisplayed.count {
             if game.cardsSelected.index(of: game.cardsDisplayed[cardDisplayedIndex]) == nil {
                 game.selectCard(at: cardDisplayedIndex)
-                print("Card selected: \(game.cardsDisplayed[cardDisplayedIndex].hashValue)")
             } else {
                 game.deselectCard(at: cardDisplayedIndex)
             }
